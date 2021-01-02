@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>architect.workshop.restassured</groupId>
+	<artifactId>handson</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>handson</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+
+		<!-- To run the Firefox test either right click on 'MyFirstTest' and run 
+			it, or at the command line type: `mvn test -Dtest=MyFirstTest` To run the 
+			Chrome test either right click on 'MyFirstChromeTest' and run it, or at the 
+			command line type: `mvn test -Dtest=MyFirstChromeTest` If you type `mvn test` 
+			or try to run all the tests you will need to have all the drivers and browsers 
+			installed -->
+
+
+
+		<!-- You might need to update this number to the most recent version, you 
+			can find it on the official SeleniumHQ.org download page https://www.seleniumhq.org/download/ -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.0.0-alpha-6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.10</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>4.2.2</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
+
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.1.12</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
